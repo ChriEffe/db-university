@@ -28,4 +28,4 @@ SELECT COUNT(`id`) FROM `departments`
 
 8.Insegnanti che non hanno un numero di telefono
 
-SELECT * FROM `teachers` WHERE `phone` IS null
+SELECT COUNT(`id`)* FROM `teachers` WHERE `phone` IS null
