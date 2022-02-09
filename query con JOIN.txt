@@ -5,3 +5,10 @@ SELECT * FROM `students` JOIN `degrees` ON `degrees`.`id` = `students`.`degree_i
 2.Seleziono i corsi di laurea del dipartimento di neuroscienze
 
 SELECT * FROM `degrees` JOIN `departments` ON `departments`.`id` = `degrees`.`department_id` WHERE `departments`.`name` = "Dipartimento di Neuroscienze"
+
+3.Seleziono tutti i corsi in cui insegna fulvio amato
+
+SELECT * FROM `courses` JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id` JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id` WHERE `teachers`.`id` = 44
+
+4.Seleziono studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
+
