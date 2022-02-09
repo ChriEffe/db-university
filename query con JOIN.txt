@@ -1,3 +1,7 @@
 1.Seleziono studenti iscritti al corso di laurea in economia
 
 SELECT * FROM `students` JOIN `degrees` ON `degrees`.`id` = `students`.`degree_id` WHERE `degrees`.`name` = "Corso di Laurea in Economia"
+
+2.Seleziono i corsi di laurea del dipartimento di neuroscienze
+
+SELECT * FROM `degrees` JOIN `departments` ON `departments`.`id` = `degrees`.`department_id` WHERE `departments`.`name` = "Dipartimento di Neuroscienze"
